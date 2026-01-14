@@ -1,0 +1,17 @@
+# Privacy Policy
+
+We value your privacy. This extension does not collect or store any personal data. All selected text is processed securely and only when you explicitly request summarization or code explanation.
+
+## Data We Process
+- Selected text: Sent to our AI API for summarization or explanation.
+- Email: Used only for verifying Pro subscriptions.
+
+## Data We Do NOT Collect
+- Browsing history
+- Personal information beyond email (for Pro users)
+
+## Third-Party Services
+- Stripe: Handles payments securely.
+- AI API: Processes selected text for summarization or explanation.
+
+For questions, contact support@example.com.

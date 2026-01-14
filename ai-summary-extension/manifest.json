@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "AI Text Summarizer",
+  "version": "1.1",
+  "description": "A professional AI writing assistant that summarizes selected text or explains code from any webpage.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/custom-icon1.png", "icons/custom-icon2.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/custom-icon1.png",
+      "48": "icons/custom-icon1.png",
+      "128": "icons/custom-icon2.png"
+    }
+  },
+  "commands": {
+    "summarize-selection": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Summarize or explain the last selected text/code"
+    }
+  },
+  "icons": {
+    "16": "icons/custom-icon1.png",
+    "48": "icons/custom-icon1.png",
+    "128": "icons/custom-icon2.png"
+  }
+}

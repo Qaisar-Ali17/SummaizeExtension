@@ -1,0 +1,119 @@
+/* Floating summarize icon - subtle improvement with gradient */
+.ai-summarize-icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.2s ease;
+  font-size: 16px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ai-summarize-icon.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ai-summarize-icon:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* Summarize popup - polished with better spacing */
+.ai-summarize-popup {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  z-index: 10001;
+  display: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.ai-summarize-popup.show {
+  display: block;
+}
+
+.ai-summarize-popup textarea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.ai-summarize-popup textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.ai-summarize-popup .options {
+  margin-bottom: 16px;
+}
+
+.ai-summarize-popup .options label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ai-summarize-popup button {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-summarize-popup button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #218838 0%, #17a2b8 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ai-summarize-popup button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.ai-summarize-popup .result {
+  margin-top: 16px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  min-height: 40px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  border-left: 3px solid #007bff;
+}

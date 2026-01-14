@@ -1,0 +1,17 @@
+# Terms of Service
+
+## Free Plan
+- Limited to 5 summaries per day.
+- Only short summaries are available.
+- Code explanation is not included.
+
+## Pro Plan
+- Unlimited summaries.
+- Access to short, medium, and bullet summaries.
+- Code explanation feature enabled.
+
+## Refund Policy
+- Payments are non-refundable.
+- Subscriptions can be canceled anytime, and access will remain until the end of the billing period.
+
+For questions, contact support@example.com.
