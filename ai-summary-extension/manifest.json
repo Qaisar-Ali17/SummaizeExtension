@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "AI Text Summarizer",
+  "name": "Shortify",
   "version": "1.1",
   "description": "A professional AI writing assistant that summarizes selected text or explains code from any webpage.",
   "permissions": [
