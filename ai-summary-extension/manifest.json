@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Shortify",
-  "version": "1.1",
+  "short_name": "Shortify",
+  "version": "1.2",
   "description": "A professional AI writing assistant that summarizes selected text or explains code from any webpage.",
   "permissions": [
     "activeTab",
